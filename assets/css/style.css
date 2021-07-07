@@ -19,6 +19,7 @@ body {
 body::before {
   content: "";
   position: fixed;
+
   /* background: linear-gradient(#ffffffe8, #ffffffe8), url("../img/bg.jpg") top right no-repeat; */
   background-size: cover;
   left: 0;
@@ -31,6 +32,8 @@ body::before {
 @media (min-width: 1024px) {
   body::before {
     background-attachment: fixed;
+    background: rgb(0,212,255);
+    background: linear-gradient(135deg, rgb(255, 255, 255) 50%, #D72323 50%);
   }
 }
 
@@ -116,7 +119,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .social-links a:hover {
-  background: #0404049f;
+  background: #D72323;
+  color: #fff;
 }
 
 @media (max-width: 992px) {
@@ -1136,8 +1140,8 @@ section .container {
 # Credits
 --------------------------------------------------------------*/
 .credits {
+  display: none;
   position: fixed;
-  right: 0;
   left: 0;
   bottom: 0;
   padding: 15px;
@@ -1149,7 +1153,7 @@ section .container {
 
 @media (max-width: 992px) {
   .credits {
-    text-align: center;
+    text-align: left;
     padding: 10px;
     background: rgba(255, 255, 255, 0.8);
   }
